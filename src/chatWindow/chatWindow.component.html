@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .block_demo {
+      border: 2px solid red;
+      width: 50%;
+      display: block;
+    }
+  </style>
+  <body>
+    <h4>List of Color Names:</h4>
+    <div class="block_demo">
+      <ul>
+        <li *ngFor="let message of messages; index as i">
+          {{ message.sender }} {{ message.message }}
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

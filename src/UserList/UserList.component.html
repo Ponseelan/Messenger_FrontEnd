@@ -1,0 +1,6 @@
+<h1>List Of Users</h1>
+<li *ngFor="let user of users; index as i">
+  <h2>
+    <a (click)="openMessage(user.id)">{{ user.loginId }}</a>
+  </h2>
+</li>
